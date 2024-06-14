@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-decoration: none;
+    font-family: Inter, sans-serif;
+    z-index: 1;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+html, body, header, nav, main, section {
+    background-color: black
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin: 10px;
+}
+
+nav svg {
+    width: 3em;
+    height: 3em;
+}
+
+.nav-buttons {
+    display: flex;
+    align-self: end;
+    gap: 3em;
+}
+
+.menu-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.menu-button svg {
+    width: 1.5em;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    width: 100%;
+}
+
+.introduction-sequence-container {
+    margin-bottom: 10em;
+}
+
+.introduction-sequence {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    min-height: 600px;
+}
+
+.introduction-sequence div {
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    width: 55%;
+    Z-index: 2;
+}
+
+.introduction-sequence div span {
+    font-size: 6em;
+    font-weight: 500;
+}
+
+.introduction-sequence img {
+    position: absolute;
+    right: 1em;
+    top: 7em;
+    z-index: 0;
+}
+
+.go-to {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    margin-left: 1.5em;
+}
+
+.go-to svg {
+    width: 40px;
+}
+
+.go-to span {
+    opacity: 60%;
+}
+
+.our-clients-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    width: 85%;
+    margin-bottom: 30em;
+}
+
+#our-clients-label {
+    opacity: 60%;
+}
+
+.our-clients-container div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.our-clients svg {
+    height: 3em;
+}
+
+.our-clients img {
+    height: 3em;
+}
+
+.about-us-container {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin-bottom: 30em;
+}
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    width: 45%;
+}
+
+.about-us span {
+    font-size: 1.1em;
+    opacity: 60%;
+}
+
+.our-projects-container {
+    width: 90%;
+}
+
+.our-projects-label {
+    font-size: 6em;
+    margin-bottom: 1em;
+}
+
+.our-projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0.5em;
+    margin-bottom: 15em;
+}
+
+.our-projects img {
+    width: 100%;
+}
+
+.our-projects-right-side, .our-projects-left-side {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.our-projects-left-side, .our-projects-right-side {
+    width: 100%;
+}
+
+.our-projects-left-side h1 {
+    font-size: 2.5em;
+}
+
+.coming-soon-projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    background-color: #FFFFFF1A;
+    height: 100%;
+    padding: 2em;
+}
+
+.coming-soon-projects div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1em;
+    background-color: black;
+    height: 2em;
+    width: 13%;
+    border-radius: 1em;
+    min-width: 2em;
+}
+
