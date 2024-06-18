@@ -7,6 +7,10 @@
     z-index: 1;
 }
 
+header {
+    width: 95%;
+}
+
 main {
     margin: 0 auto;
     width: 1280px;
@@ -379,7 +383,7 @@ footer {
 }
 
 footer div {
-    z-index: 4;
+    z-index: 3;
 }
 
 #footer-email-contact {
@@ -436,4 +440,44 @@ footer div {
     left: 40em;
     z-index: 3;
 }
+
+@keyframes up-moving {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-10px);
+    }
+}
+
+.up-arrow:hover {
+    animation: 0.1s linear 0.05s forwards up-moving;
+}
+
+@keyframes down-moving {
+    from {
+        transform: translateY(0);
+    }
+    to  {
+        transform: translateY(10px);
+    }
+}
+
+.down-arrow:hover {
+    animation: 0.1s linear 0.05s forwards down-moving;
+}
+
+@keyframes right-moving {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(10px);
+    }
+}
+
+.right-arrow:hover {
+    animation: 0.1s linear 0.05s forwards right-moving;
+}
+
 
