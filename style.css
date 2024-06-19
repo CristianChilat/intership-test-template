@@ -146,8 +146,14 @@ section {
 .what-are-we-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 30em;
     width: 85%;
-    margin-bottom: 30em;
+    margin-bottom: 25em;
+}
+
+.what-are-we-container img {
+    width: 50%;
 }
 
 .what-are-we {
@@ -230,13 +236,17 @@ section {
     display: flex;
     flex-direction: row;
     gap: 1em;
-    width: 100%;
     margin-bottom: 2em;
+    width: 1280px;
+    overflow: hidden;
 }
 
-.other-projects-container div img {
-    min-width: 100px;
+.other-projects-carousel-images {
     width: 100%;
+}
+
+.other-projects-carousel-images img:hover {
+    opacity: 0.9;
 }
 
 .other-projects-carousel-interactions {
@@ -244,6 +254,40 @@ section {
     justify-content: space-between;
     align-items: center;
     margin: 0 1em;
+    width: 100%;
+}
+
+.carousel-elements-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 0.5em;
+}
+
+.carousel-elements-container img:hover {
+    opacity: 0.8;
+}
+
+.carousel-element {
+    background: #FFFFFF4D;
+    height: 5px;
+    width: 2em;
+    border-radius: 1px;
+}
+
+.carousel-element:hover {
+    animation: 0.5s linear 0.05s forwards carousel;
+}
+
+@keyframes carousel {
+    from{
+
+    }
+    to{
+        background-color: white;
+        width: 2.5em;
+    }
 }
 
 .hwchg-container {
@@ -329,9 +373,6 @@ section {
 }
 
 .more-about-us {
-    display: flex;
-    align-items: center;
-    gap: 1em;
     width: 30%;
     font-size: 1.5em;
 }
@@ -419,7 +460,7 @@ footer div {
     width: 600px;
     height: 600px;
     z-index: 1;
-    top: 10em;
+    top: 12em;
     left: 15em;
 }
 
@@ -446,8 +487,12 @@ footer div {
         transform: translateY(0);
     }
     to {
-        transform: translateY(-10px);
+        transform: translateY(-15px);
     }
+}
+
+.up-arrow {
+
 }
 
 .up-arrow:hover {
@@ -459,7 +504,7 @@ footer div {
         transform: translateY(0);
     }
     to  {
-        transform: translateY(10px);
+        transform: translateY(15px);
     }
 }
 
@@ -472,7 +517,7 @@ footer div {
         transform: translateX(0);
     }
     to {
-        transform: translateX(10px);
+        transform: translateX(15px);
     }
 }
 
@@ -480,4 +525,13 @@ footer div {
     animation: 0.1s linear 0.05s forwards right-moving;
 }
 
+.right-arrow {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.right-arrow div {
+    display: inline;
+}
 
