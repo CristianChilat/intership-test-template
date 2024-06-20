@@ -4,21 +4,15 @@
     color: white;
     text-decoration: none;
     font-family: Inter, sans-serif;
-    z-index: 1;
 }
 
 html {
     display: block;
-    width: 100%;
 }
 
-header {
-    width: 95%;
-}
-
-main {
+main, footer, header {
     margin: 0 auto;
-    /*width: 1280px;*/
+    width: 1280px;
 }
 
 body {
@@ -26,7 +20,6 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
-
 }
 
 a:hover {
@@ -432,7 +425,7 @@ footer {
     position: relative;
     padding-bottom: 10em;
     width: 1250px;
-    overflow: clip;
+    overflow-y: hidden;
 }
 
 footer div {
@@ -549,16 +542,6 @@ footer div {
 
 @media screen and (max-device-width: 768px) {
     html, body {
-        width: 100%;
-        overflow-x: clip;
-    }
-
-    main{
-        width: 100%;
-
-    }
-
-    header {
 
     }
 
@@ -575,7 +558,6 @@ footer div {
 
     .our-clients img{
         height: auto;
-
     }
 
     .other-projects-container{
