@@ -468,6 +468,11 @@ footer div {
     gap: 5em;
 }
 
+#information-about-us a {
+    margin-bottom: 0.5em;
+    display: block;
+}
+
 .right-side-footer-component {
     display: flex;
     flex-direction: column;
@@ -602,6 +607,7 @@ footer div {
         margin: 0 30%;
         font-size: 0.7em;
         width: 100%;
+        gap: 0;
     }
 
     .introduction-sequence img {
@@ -750,7 +756,7 @@ footer div {
         grid-area: info;
         margin-top: 5em;
         display: flex;
-        gap: 6em;
+        gap: 4em;
     }
 
     #circles {
