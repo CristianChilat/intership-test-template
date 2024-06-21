@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1"
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Web3</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,11 +32,11 @@
     <section id="introduction-sequence" class="introduction-sequence-container">
         <div class="introduction-sequence">
             <div>
-                <span>
+                <h1>
                     Design studio <br>
                     for the <br>
                     web3 world <br>
-                </span>
+                </h1>
             </div>
             <img draggable="false" src="images/introduction/phoneImage.png" alt="">
         </div>
@@ -59,20 +60,20 @@
 
     <section id="what-are-we" class="what-are-we-container">
         <div class="what-are-we">
-            <h1>What is Web3 studio?</h1>
+            <h2>What is Web3 studio?</h2>
             <span>Things around crypto, NFTs and web3 as a whole are unbelievably interesting. Unfortunately, the overall usability as well as the quality of the UI is often still not up to the task. To achieve mass adoption, overcoming those hurdles will be key. And this is where our story begins.</span>
         </div>
         <img draggable="false" src="images/whatAreWe/aboutUsIlustration.svg" alt="">
     </section>
 
     <section class="our-projects-container">
-        <h1 class="our-projects-label">Projects</h1>
+        <h2 class="our-projects-label">Projects</h2>
         <div class="our-projects">
             <div class="our-projects-left-side">
                 <img draggable="false" src="images/projects/casestudy-01.png" alt="">
                 <img draggable="false" src="images/projects/casestudy-03.png" alt="">
                 <div class="coming-soon-projects">
-                    <h1>How we design web3 products</h1>
+                    <h2>How we design web3 products</h2>
                     <div>coming soon</div>
                 </div>
             </div>
@@ -84,7 +85,7 @@
     </section>
 
     <section class="other-projects-container">
-        <h1>Other projects</h1>
+        <h2>Other projects</h2>
         <div class="other-projects-carousel-images">
             <img draggable="false" src="images/otherProjects/other01.png" alt="">
             <img draggable="false" src="images/otherProjects/other03.png" alt="">
@@ -114,8 +115,7 @@
 
     <section class="hwchg-container">
         <img draggable="false" src="images/visualPart.svg" alt="">
-        <h1>How we can <br>
-            help grow</h1>
+        <h2>How we can help grow</h2>
         <div class="hwchg-content">
             <div id="left-side-hwchg">
                 <div>Product clarity</div>
@@ -140,7 +140,7 @@
 
     <section class="about-us-container">
         <div class="about-us-information-container">
-            <h1>About</h1>
+            <h2>About</h2>
             <div class="gray-text about-us">Team of product and brand designers that are really passionate about
                 blockchain technology and good design. We are not just UI freaks! We advocate users for better product
                 experience and common sense.
@@ -164,14 +164,12 @@
 
 <footer>
     <div id="left-side-footer">
-        <div>
-            <div>
-                <h1>Web3 product studio</h1>
-                <span class="gray-text">
+        <div class="footer-slogan">
+            <h2>Web3 product studio</h2>
+            <span class="gray-text">
                     Feel free to reach out if you want to collaborate <br>
                     with us, or simply have a chat.
-                </span>
-            </div>
+            </span>
         </div>
         <div id="footer-email-contact">
             <span>hello@thirdweb.studio</span>
@@ -180,25 +178,27 @@
             </a>
         </div>
     </div>
-    <div class="right-side-footer-component">
-        <div>Our projects</div>
-        <div>
-            <div class="gray-text">WingRiders</div>
-            <div class="gray-text">Trackee</div>
-            <div class="gray-text">Worldcoin</div>
-            <div class="gray-text">Audience+</div>
+    <div id="information-about-us">
+        <div id="our-projects" class="right-side-footer-component">
+            <div>Our projects</div>
+            <div>
+                <div class="gray-text">WingRiders</div>
+                <div class="gray-text">Trackee</div>
+                <div class="gray-text">Worldcoin</div>
+                <div class="gray-text">Audience+</div>
+            </div>
+        </div>
+        <div id="our-socials" class="right-side-footer-component">
+            <div>Follow us</div>
+            <div>
+                <div class="gray-text">Facebook</div>
+                <div class="gray-text">Instagram</div>
+                <div class="gray-text">Dribbble</div>
+                <div class="gray-text">Linkedin</div>
+            </div>
         </div>
     </div>
-    <div class="right-side-footer-component">
-        <div>Follow us</div>
-        <div>
-            <div class="gray-text">Facebook</div>
-            <div class="gray-text">Instagram</div>
-            <div class="gray-text">Dribbble</div>
-            <div class="gray-text">Linkedin</div>
-        </div>
-    </div>
-    <div>
+    <div id="go-to-top">
         <a draggable="false" href="#introduction-sequence" class="up-arrow">
             <img class="up-arrow" src="images/footer/arrow-top.svg" alt="">
         </a>
@@ -208,9 +208,11 @@
             home <br>
         </div>
     </div>
-    <div class="circle green"></div>
-    <div class="circle light-blue"></div>
-    <div class="circle blue"></div>
+    <div id="circles">
+        <div class="circle green"></div>
+        <div class="circle light-blue"></div>
+        <div class="circle blue"></div>
+    </div>
 </footer>
 </body>
 </html>
