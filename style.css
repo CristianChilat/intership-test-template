@@ -439,7 +439,7 @@ footer {
     justify-content: space-between;
     position: relative;
     overflow-y: clip;
-    margin-bottom: 2em;
+    padding-bottom: 5em;
 }
 
 footer div {
@@ -750,6 +750,7 @@ footer div {
 
     footer {
         flex-direction: column;
+        margin-bottom: 2em;
     }
 
     #information-about-us {
