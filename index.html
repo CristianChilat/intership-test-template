@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Web3</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/navbar/logo.svg">
 </head>
 <body>
 
 <header>
-    <nav>
+    <nav draggable="false">
         <img class="logo" draggable="false" src="images/navbar/logo.svg" alt="">
-        <div draggable="false" class="nav-buttons">
-            <a draggable="false" href="">Home</a>
+        <div  class="nav-buttons">
+            <a href="">Home</a>
             <a draggable="false" href="">About</a>
             <a draggable="false" href="">Contact</a>
             <a draggable="false" href="">Career</a>
@@ -29,7 +29,7 @@
 </header>
 
 <main>
-    <section id="introduction-sequence" class="introduction-sequence-container">
+    <section id="introduction-sequence-container">
         <div class="introduction-sequence">
             <div>
                 <h1>
@@ -41,16 +41,16 @@
             <img draggable="false" src="images/introduction/phoneImage.png" alt="">
         </div>
         <div class="go-to">
-            <a draggable="false" href="#what-are-we" class="down-arrow">
-                <img draggable="false" src="images/introduction/goToArrow.svg">
+            <a draggable="false" href="#what-are-we-container" class="down-arrow">
+                <img draggable="false" src="images/introduction/goToArrow.svg" alt="">
             </a>
             <span>We help companies design their <br>
               products to be ready for web3 world</span>
         </div>
     </section>
     <section class="our-clients-container">
-        <span id="our-clients-label">Our clients are backed by:</span>
-        <div class="our-clients">
+        <h3 id="our-clients-label">Our clients are backed by:</h3>
+        <div draggable="false" class="our-clients">
             <img draggable="false" src="images/ourClients/logoYcombinator.svg" alt="">
             <img draggable="false" src="images/ourClients/logoCoinbase.svg" alt="">
             <img draggable="false" src="images/ourClients/logoA16z.png" alt="">
@@ -58,33 +58,39 @@
         </div>
     </section>
 
-    <section id="what-are-we" class="what-are-we-container">
+    <section id="what-are-we-container">
         <div class="what-are-we">
             <h2>What is Web3 studio?</h2>
-            <span>Things around crypto, NFTs and web3 as a whole are unbelievably interesting. Unfortunately, the overall usability as well as the quality of the UI is often still not up to the task. To achieve mass adoption, overcoming those hurdles will be key. And this is where our story begins.</span>
+            <span>
+                Things around crypto, NFTs and web3 as a whole are unbelievably interesting. Unfortunately, the overall usability as well as the quality of the UI is often still not up to the task. To achieve mass adoption, overcoming those hurdles will be key. And this is where our story begins.
+            </span>
         </div>
         <img draggable="false" src="images/whatAreWe/aboutUsIlustration.svg" alt="">
+        <div class="blured-circles">
+            <div class="first"></div>
+            <div class="second"></div>
+        </div>
     </section>
 
-    <section class="our-projects-container">
+    <section id="our-projects-container">
         <h2 class="our-projects-label">Projects</h2>
         <div class="our-projects">
-            <div class="our-projects-left-side">
+            <div id="left-side">
                 <img draggable="false" src="images/projects/casestudy-01.png" alt="">
                 <img draggable="false" src="images/projects/casestudy-03.png" alt="">
                 <div class="coming-soon-projects">
-                    <h2>How we design web3 products</h2>
+                    <h3>How we design web3 products</h3>
                     <div>coming soon</div>
                 </div>
             </div>
-            <div class="our-projects-right-side">
+            <div id="right-side">
                 <img draggable="false" src="images/projects/casestudy-02.png" alt="">
                 <img draggable="false" src=images/projects/casestudy-04.png alt="">
             </div>
         </div>
     </section>
 
-    <section class="other-projects-container">
+    <section id="other-projects-container">
         <h2>Other projects</h2>
         <div class="other-projects-carousel-images">
             <img draggable="false" src="images/otherProjects/other01.png" alt="">
@@ -93,14 +99,14 @@
         </div>
         <div class="other-projects-carousel-interactions">
             <ul class="carousel-elements-container">
-                <li class="carousel-element"></li>
-                <li class="carousel-element"></li>
-                <li class="carousel-element"></li>
-                <li class="carousel-element"></li>
-                <li class="carousel-element"></li>
-                <li class="carousel-element"></li>
-                <li class="carousel-element"></li>
-                <li class="carousel-element"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
             </ul>
             <div class="carousel-elements-container">
                 <a draggable="false" href="#">
@@ -113,35 +119,40 @@
         </div>
     </section>
 
-    <section class="hwchg-container">
+    <section id="our-help-container">
         <img draggable="false" src="images/visualPart.svg" alt="">
         <h2>How we can help grow</h2>
-        <div class="hwchg-content">
-            <div id="left-side-hwchg">
+        <div class="our-help-content">
+            <div id="left-side-our-help">
                 <div>Product clarity</div>
-                <div class="hwchg-text-gap hwchg-text-flex">
+                <div class="our-help-text-gap our-help-text-flex">
                     <div class="gray-text">UX/UI design</div>
                     <div class="gray-text">Maintain process</div>
                 </div>
             </div>
-            <img draggable="false" src="images/HWCHG/help.png" alt="">
-            <div id="right-side-hwchg">
-                <div id="right-side-label">Are you at the idea stage? We will help you identify the critical MVP product
-                    scope.
+            <img draggable="false" src="images/ourHelp/help.png" alt="">
+            <div id="right-side-our-help">
+                <div id="right-side-label">
+                    Are you at the idea stage? We will help you identify the critical MVP product scope.
                 </div>
-                <div class="hwchg-text-gap">
+                <div class="our-help-text-gap">
                     <div class="gray-text">product goal&vision</div>
                     <div class="gray-text">brand voice</div>
                     <div class="gray-text">product positioning</div>
                 </div>
             </div>
         </div>
+        <div class="blured-circles" id="second-circles">
+            <div class="first"></div>
+            <div class="second"></div>
+        </div>
     </section>
 
-    <section class="about-us-container">
+    <section id="about-us-container">
         <div class="about-us-information-container">
             <h2>About</h2>
-            <div class="gray-text about-us">Team of product and brand designers that are really passionate about
+            <div class="gray-text about-us">
+                Team of product and brand designers that are really passionate about
                 blockchain technology and good design. We are not just UI freaks! We advocate users for better product
                 experience and common sense.
             </div>
@@ -152,19 +163,23 @@
                 </a>
             </div>
         </div>
-        <img draggable="false" class="absolute-images first-image" src="images/aboutUs/about01.png" alt="">
-        <img draggable="false" class="absolute-images second-image" src="images/aboutUs/about02.png" alt="">
-        <img draggable="false" class="absolute-images third-image" src="images/aboutUs/about03.png" alt="">
-        <img draggable="false" class="absolute-figures third-figure" src="images/aboutUs/aboutShape03.svg" alt="">
-        <img draggable="false" class="absolute-figures first-figure" src="images/aboutUs/aboutShape01.svg" alt="">
-        <img draggable="false" class="absolute-figures second-figure" src="images/aboutUs/aboutShape02.svg" alt="">
+        <div class="absolute-elements">
+            <img draggable="false" class="first-image" src="images/aboutUs/about01.png" alt="">
+            <img draggable="false" class="second-image" src="images/aboutUs/about02.png" alt="">
+            <img draggable="false" class="third-image" src="images/aboutUs/about03.png" alt="">
+            <div class="figures">
+                <img draggable="false" class="third-figure" src="images/aboutUs/aboutShape03.svg" alt="">
+                <img draggable="false" class="first-figure" src="images/aboutUs/aboutShape01.svg" alt="">
+                <img draggable="false" class="second-figure" src="images/aboutUs/aboutShape02.svg" alt="">
+            </div>
+        </div>
     </section>
 
 </main>
 
 <footer>
     <div id="left-side-footer">
-        <div class="footer-slogan">
+        <div>
             <h2>Web3 product studio</h2>
             <span class="gray-text">
                     Feel free to reach out if you want to collaborate <br>
@@ -198,21 +213,21 @@
             </div>
         </div>
     </div>
-    <div id="go-to-top">
-        <a draggable="false" href="#introduction-sequence" class="up-arrow">
-            <img class="up-arrow" src="images/footer/arrow-top.svg" alt="">
-        </a>
-        <div class="gray-text">
-            Back <br>
-            to <br>
-            home <br>
-        </div>
-    </div>
     <div id="circles">
-        <div class="circle green"></div>
-        <div class="circle light-blue"></div>
-        <div class="circle blue"></div>
+        <div class="green"></div>
+        <div class="light-blue"></div>
+        <div class="blue"></div>
     </div>
 </footer>
+<div id="go-to-top">
+    <a draggable="false" href="#introduction-sequence-container" class="up-arrow">
+        <img class="up-arrow" src="images/footer/arrow-top.svg" alt="">
+    </a>
+    <div class="gray-text">
+        Back <br>
+        to <br>
+        home <br>
+    </div>
+</div>
 </body>
 </html>

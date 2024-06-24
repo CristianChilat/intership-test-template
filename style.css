@@ -27,7 +27,7 @@ h1 {
 }
 
 h2 {
-    font-size: 3em;
+    font-size: 6em;
 }
 
 a:hover {
@@ -76,7 +76,7 @@ section {
     width: 100%;
 }
 
-.introduction-sequence-container {
+#introduction-sequence-container {
     position: relative;
     margin-bottom: 10em;
 }
@@ -89,11 +89,8 @@ section {
 }
 
 .introduction-sequence div {
-    display: flex;
-    align-items: end;
-    flex-direction: column;
-    width: 55%;
-    Z-index: 2;
+    text-align: end;
+    z-index: 2;
     min-width: 540px;
 }
 
@@ -134,6 +131,7 @@ section {
 }
 
 #our-clients-label {
+    font-size: 1em;
     opacity: 60%;
 }
 
@@ -148,18 +146,20 @@ section {
 
 .our-clients img {
     height: 3em;
+    width: 220px;
 }
 
-.what-are-we-container {
+#what-are-we-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 30em;
-    width: 85%;
+    width: 100%;
     margin-bottom: 20em;
+    gap: 5em;
 }
 
-.what-are-we-container img {
+#what-are-we-container img {
     width: 50%;
 }
 
@@ -170,17 +170,20 @@ section {
     width: 45%;
 }
 
+.what-are-we h2 {
+    font-size: 2em;
+}
+
 .what-are-we span {
     font-size: 1.1em;
     opacity: 60%;
 }
 
-.our-projects-container {
-    width: 90%;
+#our-projects-container {
+    width: 100%;
 }
 
 .our-projects-label {
-    font-size: 6em;
     margin-bottom: 1em;
 }
 
@@ -196,14 +199,10 @@ section {
     width: 100%;
 }
 
-.our-projects-right-side, .our-projects-left-side {
+.our-projects #right-side, .our-projects #left-side {
     display: flex;
     flex-direction: column;
     gap: 0.5em;
-}
-
-.our-projects-left-side, .our-projects-right-side {
-    width: 100%;
 }
 
 .coming-soon-projects{
@@ -216,7 +215,7 @@ section {
     padding: 1em;
 }
 
-.coming-soon-projects h2 {
+.coming-soon-projects h3 {
     font-size: 1.5em;
 }
 
@@ -233,8 +232,7 @@ section {
     font-size: 0.9em;
 }
 
-.other-projects-container h2 {
-    font-size: 5em;
+#other-projects-container h2 {
     margin-left: 0.2em;
     margin-bottom: 0.5em;
 }
@@ -279,7 +277,7 @@ section {
     opacity: 0.8;
 }
 
-.carousel-element {
+.carousel-elements-container li {
     background: #FFFFFF4D;
     height: 5px;
     width: 2em;
@@ -287,7 +285,7 @@ section {
     border-radius: 1px;
 }
 
-.carousel-element:hover {
+.carousel-elements-container li:hover {
     animation: 0.05s linear 0.05s forwards carousel;
     cursor: pointer;
 }
@@ -303,8 +301,8 @@ section {
     }
 }
 
-.hwchg-container {
-    width: 95%;
+#our-help-container {
+    width: 100%;
     margin-top: 15em;
     display: flex;
     flex-direction: column;
@@ -313,12 +311,11 @@ section {
     margin-bottom: 20em;
 }
 
-.hwchg-container svg {
+#our-help-container svg {
     width: 100%;
 }
 
-.hwchg-container h2 {
-    font-size: 5em;
+#our-help-container h2 {
     width: 100%;
     margin-bottom: 1em;
 }
@@ -327,18 +324,18 @@ section {
     opacity: 0.6;
 }
 
-.hwchg-content {
+.our-help-content {
     display: flex;
     justify-content: space-between;
     align-items: end;
     width: 80%;
 }
 
-.hwchg-content img {
+.our-help-content img {
     margin: 0 2em;
 }
 
-#left-side-hwchg {
+#left-side-our-help {
     display: flex;
     flex-direction: column;
     gap: 1.5em;
@@ -347,7 +344,7 @@ section {
 }
 
 
-#right-side-hwchg {
+#right-side-our-help {
     display: flex;
     flex-direction: column;
     gap: 1.5em;
@@ -356,19 +353,19 @@ section {
     min-width: 240px;
 }
 
-.hwchg-text-gap {
+.our-help-text-gap {
     display: flex;
     flex-direction: column;
     padding-left: 1em;
 }
 
-.hwchg-text-flex {
+.our-help-text-flex {
     display: flex;
     flex-direction: column;
     gap: 1.5em;
 }
 
-.about-us-container {
+#about-us-container {
     position: relative;
     margin-bottom: 40em;
 }
@@ -381,8 +378,7 @@ section {
     min-width: 950px;
 }
 
-.about-us-container h2 {
-    font-size: 5em;
+#about-us-container h2 {
     width: 30%;
 }
 
@@ -397,8 +393,9 @@ section {
     font-size: 1.5em;
 }
 
-.absolute-images {
+.absolute-elements img {
     position: absolute;
+    z-index: 2;
 }
 
 .first-image {
@@ -415,12 +412,11 @@ section {
     left: 60em;
 }
 
-.absolute-figures {
-    position: absolute;
-    z-index: 0;
+.figures img {
+    z-index: 0 !important;
 }
 
-.first-figure {
+.absolute-elements .first-figure {
     left: 60em;
     bottom: 15em;
 }
@@ -463,6 +459,10 @@ footer div {
     gap: 5em;
 }
 
+#left-side-footer h2 {
+    font-size: 3.5em;
+}
+
 #information-about-us {
     display: flex;
     gap: 5em;
@@ -483,7 +483,7 @@ footer div {
     margin: 1em 0;
 }
 
-.circle {
+#circles div {
     border-radius: 50%;
     position: absolute;
 }
@@ -523,12 +523,6 @@ footer div {
         transform: translateY(-15px);
     }
 }
-
-.up-arrow {
-
-}
-
-
 
 .up-arrow:hover {
     animation: 0.1s linear 0.05s forwards up-moving;
@@ -570,6 +564,38 @@ footer div {
     display: inline;
 }
 
+#go-to-top {
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+}
+
+.blured-circles {
+    position: relative;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+}
+
+.blured-circles .first {
+    position: absolute;
+    background-color: #55ff85;
+    box-shadow: 0 0 12em 10em #55ff85;
+    right: -20em;
+}
+
+.blured-circles .second {
+    position: absolute;
+    background-color: blue;
+    box-shadow: 0 0 15em 10em blue;
+    right: -25em;
+    bottom: -10em;
+}
+
+#second-circles {
+    left: -85em;
+}
+
 @media screen and (max-device-width: 768px) {
     * {
         min-width: auto !important;
@@ -604,8 +630,7 @@ footer div {
     }
 
     .introduction-sequence {
-        margin: 0 30%;
-        font-size: 0.7em;
+        font-size: 1em;
         width: 100%;
         gap: 0;
     }
@@ -620,12 +645,13 @@ footer div {
         width: 70%;
     }
 
-    .what-are-we-container {
+    #what-are-we-container {
+        position: relative;
         flex-direction: column;
         overflow-x: clip;
     }
 
-    .what-are-we-container img {
+    #what-are-we-container img {
         width: 120%;
     }
 
@@ -645,17 +671,19 @@ footer div {
     .our-clients-container{
         display: flex;
         align-items: center;
+        width: 100%;
+    }
+
+    .our-clients {
+        width: 90%;
     }
 
     .our-clients img{
         height: auto;
+        width: 100%;
     }
 
-    .our-projects-label {
-        font-size: 4em;
-    }
-
-    .other-projects-container{
+    #other-projects-container{
         width: 90%;
     }
 
@@ -678,26 +706,25 @@ footer div {
         width: 80%;
     }
 
-    .carousel-element {
-        gap: 1em;
+    .carousel-elements-container li {
         width: 1.5em;
     }
 
-    .hwchg-container h2 {
-        font-size: 4em;
-    }
-
-    .hwchg-content {
+    .our-help-content {
         flex-direction: column;
         align-items: start;
         gap: 3em;
+        width: 100%;
     }
 
-    .hwchg-content img {
+    .our-help-content img {
         margin: 0;
     }
 
-    .about-us-container {
+
+
+
+    #about-us-container {
         margin-bottom: 50em;
     }
 
