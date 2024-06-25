@@ -23,7 +23,9 @@ body {
 }
 
 h1 {
-    font-size: 6em;
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
 }
 
 h2 {
@@ -41,7 +43,7 @@ html, body, header, nav, main, section {
 nav {
     display: flex;
     justify-content: space-between;
-    align-items: end;
+    align-items: center;
     margin: 10px;
 }
 
@@ -52,7 +54,7 @@ nav svg {
 
 .nav-buttons {
     display: flex;
-    align-self: end;
+    align-self: center;
     gap: 3em;
 }
 
@@ -113,6 +115,11 @@ section {
     margin-left: 1.5em;
 }
 
+.go-to-text {
+    display: flex;
+    flex-direction: column;
+}
+
 .go-to svg {
     width: 40px;
 }
@@ -121,7 +128,7 @@ section {
     opacity: 60%;
 }
 
-.our-clients-container {
+#our-clients-container {
     display: flex;
     flex-direction: column;
     gap: 3em;
@@ -135,7 +142,7 @@ section {
     opacity: 60%;
 }
 
-.our-clients-container div {
+#our-clients-container div {
     display: flex;
     justify-content: space-between;
 }
@@ -205,7 +212,7 @@ section {
     gap: 0.5em;
 }
 
-.coming-soon-projects{
+.coming-soon-projects {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -259,10 +266,10 @@ section {
     justify-content: space-between;
     align-items: center;
     margin: 0 1em;
-    width: 100%;
+    width: 99%;
 }
 
-.carousel-elements-container {
+.left-side-interactions {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -273,11 +280,15 @@ section {
     margin: 0;
 }
 
-.carousel-elements-container img:hover {
+.right-side-interactions {
+    display: flex;
+}
+
+.left-side-interactions img:hover {
     opacity: 0.8;
 }
 
-.carousel-elements-container li {
+.left-side-interactions li {
     background: #FFFFFF4D;
     height: 5px;
     width: 2em;
@@ -285,16 +296,16 @@ section {
     border-radius: 1px;
 }
 
-.carousel-elements-container li:hover {
+.left-side-interactions li:hover {
     animation: 0.05s linear 0.05s forwards carousel;
     cursor: pointer;
 }
 
 @keyframes carousel {
-    from{
+    from {
 
     }
-    to{
+    to {
         background-color: white;
         width: 2.2em;
         margin: 0;
@@ -328,7 +339,7 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: end;
-    width: 80%;
+    width: 100%;
 }
 
 .our-help-content img {
@@ -386,6 +397,7 @@ section {
     font-size: 1.4em;
     width: 40%;
     line-height: 1.5em;
+    min-width: 480px;
 }
 
 .more-about-us {
@@ -457,6 +469,11 @@ footer div {
     display: flex;
     flex-direction: column;
     gap: 5em;
+}
+
+.recommendation {
+    display: flex;
+    flex-direction: column;
 }
 
 #left-side-footer h2 {
@@ -532,7 +549,7 @@ footer div {
     from {
         transform: translateY(0);
     }
-    to  {
+    to {
         transform: translateY(15px);
     }
 }
@@ -562,12 +579,6 @@ footer div {
 
 .right-arrow div {
     display: inline;
-}
-
-#go-to-top {
-    position: fixed;
-    bottom: 1em;
-    right: 1em;
 }
 
 .blured-circles {
@@ -606,14 +617,30 @@ footer div {
     }
 
     html {
+        width: 100%;
         overflow-x: clip;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     header {
         width: 100%;
     }
 
-    h2{
+    h1 {
+        margin-left: 0.6em;
+    }
+
+    h1 span {
+        width: 90%;
+        font-size: 0.8em !important;
+    }
+
+    h2 {
         font-size: 2.5em !important;
     }
 
@@ -635,11 +662,22 @@ footer div {
         gap: 0;
     }
 
+    .introduction-sequence div {
+        display: flex;
+        justify-content: center;
+    }
+
+    .introduction-sequence h1 {
+        font-size: 5.5em;
+        width: 70%;
+        text-align: start;
+    }
+
     .introduction-sequence img {
         display: none;
     }
 
-    .our-clients{
+    .our-clients {
         flex-direction: column;
         gap: 5em;
         width: 70%;
@@ -665,10 +703,11 @@ footer div {
     }
 
     .our-projects {
+        width: 100%;
         flex-direction: column-reverse;
     }
 
-    .our-clients-container{
+    #our-clients-container {
         display: flex;
         align-items: center;
         width: 100%;
@@ -678,25 +717,25 @@ footer div {
         width: 90%;
     }
 
-    .our-clients img{
+    .our-clients img {
         height: auto;
         width: 100%;
     }
 
-    #other-projects-container{
+    #other-projects-container {
         width: 90%;
     }
 
-    .other-projects-carousel-images{
+    .other-projects-carousel-images {
         display: flex;
         justify-content: center;
     }
 
-    .other-projects-carousel-images img{
+    .other-projects-carousel-images img {
         display: none;
     }
 
-    .other-projects-carousel-images img:nth-child(1){
+    .other-projects-carousel-images img:nth-child(1) {
         display: block;
         width: 100%;
     }
@@ -706,7 +745,7 @@ footer div {
         width: 80%;
     }
 
-    .carousel-elements-container li {
+    .left-side-interactions li {
         width: 1.5em;
     }
 
@@ -744,7 +783,7 @@ footer div {
     }
 
     .second-image {
-        left: 0;
+        left: -2em;
         top: 40em;
     }
 
@@ -764,7 +803,7 @@ footer div {
 
     .third-figure {
         left: -10em;
-        top: 26em;
+        top: 20em;
         width: 80%;
     }
 
@@ -773,15 +812,15 @@ footer div {
     }
 
     footer {
+        position: relative;
         flex-direction: column;
         margin-bottom: 2em;
     }
 
     #information-about-us {
-        grid-area: info;
         margin-top: 5em;
         display: flex;
-        gap: 4em;
+        justify-content: center;
     }
 
     #circles {
@@ -790,8 +829,8 @@ footer div {
     }
 
     #go-to-top {
-        position: fixed;
-        right: 1em;
-        bottom: 1em;
+        position: absolute;
+        right: 0;
+        top: 5em;
     }
 }
